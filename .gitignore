@@ -1,0 +1,10 @@
+# Local environment and secrets files (at any directory level)
+.env
+.env.*
+!.env.example
+.secrets
+.secrets/
+secrets/
+application-local.yml
+application-local.yaml
+application-local.properties

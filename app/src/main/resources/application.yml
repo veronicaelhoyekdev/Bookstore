@@ -1,0 +1,17 @@
+# Configuration for the server
+server:
+  port: 8080
+
+# Configuration for MongoDB connection
+spring:
+  data:
+    mongodb:
+      database: ${MONGODB_DATABASE:bookstore}
+      uri: ${MONGODB_URI}
+
+# Configuration for application security using JWT
+application:
+  security:
+    jwt:
+      secret-key: ${JWT_SECRET_KEY}
+      expiration: ${JWT_EXPIRATION:86400000} # a day (24 * 60 * 60 * 1000)
